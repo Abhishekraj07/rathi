@@ -1,0 +1,138 @@
+1. Features of java?
+2. What is wora?
+3. Architecture-neutral vs platform-independent?
+4. Why interpretation? 
+5. Is java faster than C & C++?
+	just in time compiler name -> HOTSPOT
+6. Abstraction and Encapsulation relation?
+	attributes should not be allowed for modification directly(use Getters and Setters)
+7 Polymorphism?
+8 can overloading happen between parent and child?
+9 Do private members get inherited in child class?
+	No, only public members
+11.0 Different scopes?
+	maximum restrictive ->  private
+				default(Same Package) 
+				protected 
+				public
+11  features that started in java 1.5, 1.6, 1.7?
+	 1.7 -> NIO 
+	        binary pattern storage till 32-bits
+		Executor Framework(Multi-Threading Feature)
+		Synchronizers(barriers, counters)
+ 
+	1.8 ->	Multiple try single catch 
+12 Atomic interger and long?
+	Other atomic members does not exist		
+13 Parent class of exception?
+14 Checked vs Uncheckedexceptions?
+	checked -> compile-time
+	unchecked -> runtime
+15 unchecked dosent force to write exception but allows, why?
+	can cause problems for programmers
+16 Why custom exceptions?
+	reduction in programming complexity
+17 null pointer exception(again and again), is he a good programmer?
+	no, because he is not instantiating the objects
+18 Dynamic Data Structures advantages and disadvantages?
+	Memory Leak problem is avoided using collections.
+19 Different types of Collections?
+20 Collection heirarchy?
+21 Featues of List?
+22 arraylist vs linkedlist?
+23 which interfaceslinkedlisat implement?
+24 unique feature of Set?
+25 Fastest performing set?
+	HashSet -> bcoz, no order
+26 HashCode and Equals method not overridden in a class, and its object inserted into hashset then what?
+	it allows duplicate entries and the program fails silently
+27 Ticket Booking Collection choice?
+	LinkedList
+28 No implementation of comparator or comparable by a class and we try to insert it into a treeset then what?
+29 comparator and comparable, when?
+30 which algorithm is implemented in treeset for sorting?
+	red-black tree
+31 vectors vs array-list?
+	vector -> thread safe(synchronize methods, legacy collection)
+	ArrayLists grow by 50% of the previous size when space is not sufficient for new element, where as Vector will grow by 100% of the previous size when there is no space for new incoming element.
+32 Different types of streams?
+	byte and character streams
+	character stream -> internationalize your application.
+			    if you want to read a charater set and translate into another character set then you use charcter stream.
+	byte stream -> to read and write byte-by-byte.
+33 why do we need serialization?
+	to store objects in secondary memory and send objects over network.
+34 when deserializing, is the constructor called?
+	No
+35 when deserializing, class where it is deserialized is not present then which exception is thrown?
+	classNotFound Exception
+36 calss that is not serializable but we try to serialize its object, what will happen?
+	NotSerializableException
+37 parent class is not serializable but child is serializable then?
+	parent serializable object can not be serialized through child serializable object. (vice-versa allowed (default constructor is called)) 
+38 use of transient?
+39 What are the advantages of jdbc?
+	4 advantages -> {Provide Existing Enterprise Data, Simplified Enterprise Development, Zero Configuration for Network Computers, Full Access to Metadata}
+40 Different interfaces in JDBC?
+41 which method executes DDL and DML queries?
+	executeUpdate.
+42 which method executes select query?
+	executeQuery.
+43 how to check if more records exists or not?
+	resultSet.next()
+44 advantages of preparedStatements?
+	A PreparedStatement Object would be faster than a Statement Object where repeated execution of SQL statements is required. The reason is that the creation of a PreparedStatement object causes it to be precompiled within the database. So, it does not have to be recompiled during the execution again and again. 
+	Automatic prevention of SQL injection attacks by builtin escaping of quotes and other special characters.
+45 need of web-server?
+46 which protocol web-server or web-contaier implements?
+	HTTP
+47 web-server vs web-container?
+	web-container manages life-cycle of servlet
+48 what is apache-tomcat?
+	application server.
+49 to qualify a web-server which 3 methods of http protocols must be implemented?
+	GET, POST, HEAD.
+50 Different http methods?
+51 life-cycle of servlet?
+	Loading a Servlet.
+	Initializing the Servlet.
+	Request handling.
+	Destroying the Servlet.
+52 when servlet class is defined wether no constructor is defined or no constructor, why?
+	bcoz, web-container cannot decide which constructor to call so it always calls default constructor.
+53 what is servlet-config?
+	servlet-config is an interface
+	stores key-value pair of different configuration parameter for every seperate servlet
+	ServletConfig object is created by web container for each servlet to pass information to a servlet during initialization.
+54 servlet-context/web-application?
+	Single.
+58 In HTTP servlet we dont override service methods, why?
+59 How to check if GET method is invoked or POST?
+	request.getMethod()
+60 which exception service method throws?
+	ServletException and IOException
+61 when is servlet exception thrown?
+	whens servlet is busy  -> unavailableException.
+62 Different ways of session management?
+	User Authentication, HTML Hidden Field ,Cookies, URL Rewriting, Session Management API.
+63 which exception destroy method throws?
+	No Exception is thrown.
+64 Different method in servlet 
+65 difference between request dispatchers forward and include?
+	forward -> forwards the control to the next servlet/jsp you are calling.
+	include -> while include retains the control with the current servlet, it just includes the processing done by the calling servlet/jsp.
+
+* Simplicity
+* Exceptional-handling
+* Functional-Programming
+* Multi-Threading
+* Interpretted & Compiled
+* Secure
+	jar file never harms your computer
+* Security manager
+* Encapsulation
+	binding attributes and methods(not function)
+	function can exist without a class but a method dosent
+* Abstraction
+* multiple variables of only single data type can be declared inside for loop 
+* A switch works with the byte , short , char , and int primitive data types

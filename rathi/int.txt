@@ -1,0 +1,95 @@
+1. Diff between include directive and include method of request dispatcher?
+	include directive is static(Page is included during translate phase).
+	If the resourse is not available, it is translate error
+	When resourse is to be included, cannot be decided at runtime
+ 	Include method of request dispatcher includes the resource at runtime
+2. What are different implicit objects in jsp?
+3. difference and relation between JSTL and Expression Language?
+	In EL we dcant display nested properties, in jstl it is possible.
+	JSTL has looping tags, tokenizers, interact with databases.
+4. Tags for formatting?
+5. is JSTL outdated?
+	Yes.
+6. Is it Good Practice to use scriplets injsp?
+	No
+7.  Different action tags?
+8 . Different scopes of action tags?
+
+
+___________________________________________LAMBDA EXPRESSION__________________________________________________________
+
+1. what is the feature name of lambda EXPRESSION?
+	Functional Programming
+2. sam full form?
+	single abstract method
+3. What is functional interface?
+	A functional interface is an interface that contains only one abstract method.	
+	Annotation => @FunctionalInterface
+4. different functional interface provided in jdk 1.8?
+	Consumer, Supplier, etc.
+5. Advantages of LAMBDA EXPRESSION?
+
+
+
+___________________________________________HTML 5__________________________________________________________
+
+1. Different features of HTML 5?
+	audio, video, nav, etc.
+2. Differetn sub-types of text type?
+	number, email, etc.
+3. Different validations that can be performed in text?
+4. What is place-holder?
+
+
+___________________________________________CSS 3__________________________________________________________
+
+1. Different types of css?
+2. Best type of CSS?
+	External(reusability, resuction in complexity)
+3. Advantages of CSS?
+
+___________________________________________JavaScript__________________________________________________________
+
+1. What is JavaScript?
+2. Full From of DOM?
+	Document Object Model?
+3. Use of DOM?
+4. Where are the places we can write javascript objects?
+	head-tag and inside body-tag
+5. When is the script inside the head tag executed?
+	before the web-page is rendered
+6. Different kind of message-boxes javascript provides?
+7. Different events javascript provides?
+
+
+___________________________________________MYSQL__________________________________________________________
+1. What is MYSQL?
+2. Is IT open-source?
+3. Diff data-types in mysql?
+4. Diff types of constraints?
+	Domain constraint
+	Tuple Uniqueness constraint
+	Key constraint
+	Entity Integrity constraint
+	Referential Integrity constraint
+5. How do we implement a sequence in mysql?
+	auto-increment
+6. What is join? Diff types of joins?
+	types of inner join -> (equi-join, natural-join, inner-join)
+7. what is left and right joins?
+8. subqueries or joins?
+9. what are views?
+10. Types of Views?
+	updateble and non-updatable.
+11. why a view is non-updatable?
+12. Is full-outer join possible in mysql?
+	yes, using union-all but full-outer join keyword is not pssible
+13. Is check constraint available in mysql?
+	It is available but dosent work.
+14. mysql char and varchar?
+
+___________________________________________ANGULAR__________________________________________________________
+1. Advantages of Angular?
+	two-way binding
+2. Architecture that angular follows?
+3. structural directives in angular?

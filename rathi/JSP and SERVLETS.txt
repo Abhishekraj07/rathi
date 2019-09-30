@@ -1,0 +1,6 @@
+1. Diff between include directive and include method of request dispatcher?
+	include directive is static(Page is included during translate phase).
+	If the resourse is not available, it is translate error
+	When resourse is to be included, cannot be decided at runtime
+ 	Include method of request dispatcher includes the resource at runtime
+2. What are different implicit objects in jsp?
